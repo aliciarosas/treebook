@@ -5,7 +5,6 @@ class StatusesController < ApplicationController
   # GET /statuses.json
   def index
     @statuses = Status.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @statuses }
@@ -59,7 +58,6 @@ class StatusesController < ApplicationController
   # PUT /statuses/1.json
   def update
     @status = Status.find(params[:id])
-
     respond_to do |format|
       if @status.update_attributes(params[:status])
         format.html { redirect_to @status, notice: 'Status was successfully updated.' }

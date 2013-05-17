@@ -10,6 +10,7 @@ gem 'simple_form'
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'debugger'
 end
 
 group :production do
